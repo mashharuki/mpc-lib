@@ -47,3 +47,24 @@ Contributions of code and ideas are welcome. Prior to opening a pull request, pl
 ## License
 
 The code in this repository is offered under the terms of the GNU General Public License, as described in the [LICENSE](LICENSE) file.
+
+### 動かした記録
+
+dockerで動かした記録
+
+```bash
+cd docker
+```
+
+```bash
+sh run_tests.sh Dockerfile.jammy
+```
+
+コンテナにログインする
+
+```bash
+docker exec -it fd2c9ff2bca65a76d1b9af8ad303557ca5f86084cd11f57ab4fd230d3ef94670 /bin/bash
+```
+
+### Refercense
+1. [MPC CMPの論文](https://eprint.iacr.org/2020/492.pdf)

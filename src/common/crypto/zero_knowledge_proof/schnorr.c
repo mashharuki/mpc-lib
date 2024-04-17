@@ -67,7 +67,7 @@ static zero_knowledge_proof_status schnorr_zkp_generate_impl(const elliptic_curv
 zero_knowledge_proof_status schnorr_zkp_generate(const elliptic_curve256_algebra_ctx_t *algebra, const uint8_t *prover_id, uint32_t id_len, const elliptic_curve256_scalar_t *secret, const elliptic_curve256_point_t *public_data, schnorr_zkp_t *proof)
 {
     zero_knowledge_proof_status ret = ZKP_UNKNOWN_ERROR;
-    schnorr_zkp_t local_proof;
+    schnorr_zzkp_t local_proof;
     
     if (!algebra || !prover_id || !id_len || !secret || !public_data || !proof)
         return ZKP_INVALID_PARAMETER;
